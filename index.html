@@ -15,199 +15,66 @@
     <div class="signUp">
         <div class="container">
             <div class="row">
+                <!-- back button -->
                 <div class="col-xs-12 col-sm-12">
                     <button type="button" class="btn btn-back">
                         <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
                     </button>
                 </div>
+                <!-- form your phone-->
                 <div class="text-center">
                     <h1>Sign Up</h1>
                     <p>Join now for the ride credit</p>
-                    <!--Dropdown-->
+                    <!--input + country dropdown-->
                     <div class="container mUpDown">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12">
                                 <hr>
-                                <div class="input-group">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#">
+                                    <!--dropdown menu-->
+                                    <div class="input-group-btn flag-menu">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <img src="assets/img/Mexico-icon.png" alt="">
-                                        </a>
                                             <span class="caret"></span>
                                         </button>
                                         <ul class="dropdown-menu dropW">
                                             <li>
-                                                <a href="#"><img src="assets/img/Mexico-icon.png" alt=""></a>
+                                                <a href="#">
+                                                    <img src="assets/img/Mexico-icon.png" alt="">
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="assets/img/Colombia-icon.png" alt=""></a>
+                                                <a href="#">
+                                                    <img src="assets/img/Colombia-icon.png" alt="">
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="assets/img/Peru-icon.png" alt=""></a>
+                                                <a href="#">
+                                                    <img src="assets/img/Peru-icon.png" alt="">
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="assets/img/Chile-icon.png" alt=""></a>
+                                                <a href="#">
+                                                    <img src="assets/img/Chile-icon.png" alt="">
+                                                </a>
                                             </li>
                                         </ul>
-                                    </div>
-                                <input type="text" pattern="^[9|8|7|6]\d{8}$" class="form-control" placeholder="Enter your telephone" aria-label="" required></div>
+                                        </div>
+                                    <!--input phone number-->
+                                    <form name="phone" action="" method="POST">
+                                        <input type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Enter your telephone.." class="form-control">
+                                        <img class="img-responsive" src="assets/img/keyboard.png" alt="">
+                                        <input type="submit" class="btn btn-default btn-next mUpDown" value="Next">
+                                        <p>We'll send a text to verify your phone</p>
+                                    </form>
+
+                                </div>
                                 <hr>
                             </div>
                         </div>
                     </div>
               </div>
             </div>
-            <!-- phone key pad 
-            <div class="container phonepad">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4 phone">
-                        <div class="row1">
-                            <div class="col-md-12">
-                                <input type="tel" name="name" id="telNumber" class="form-control tel" value="" />
-                                <div class="num-pad">
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                1
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                2
-                                                <span class="small">
-                                                    <p>
-                                                        ABC</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                3
-                                                <span class="small">
-                                                    <p>
-                                                        DEF</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                4
-                                                <span class="small">
-                                                    <p>
-                                                        GHI</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                5
-                                                <span class="small">
-                                                    <p>
-                                                        JKL</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                6
-                                                <span class="small">
-                                                    <p>
-                                                        MNO</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                7
-                                                <span class="small">
-                                                    <p>
-                                                        PQRS</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                8
-                                                <span class="small">
-                                                    <p>
-                                                        TUV</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                9
-                                                <span class="small">
-                                                    <p>
-                                                        WXYZ</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                *
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                0
-                                                <span class="small">
-                                                    <p>
-                                                        +</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4">
-                                        <div class="num">
-                                            <div class="txt">
-                                                #
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix">
-                                </div>
 
-                            </div>
-                        </div>
-
-                        <div class="clearfix">
-                        </div>
-                        
-                    </div>
-
-                </div>
-
-            </div>
-             -->
-            <div class="container text-center mUpDown">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <img class="img-responsive" src="assets/img/keyboard.png" alt="">
-                        <button type="button" class="btn btn-default btn-next mUpDown">Next</button>
-                        <p>We'll send a text to verify your phone</p>
-                    </div>
                 </div>
             </div>
         </div>

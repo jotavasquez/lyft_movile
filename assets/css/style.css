@@ -94,78 +94,13 @@
     margin: 5% 0;
 }
 
-
-/*phone pad*/
-.phonepad p {
-    margin: 0;
-    padding: 0 0 5% 0;
-    line-height: 2vh;
+.flag-menu {
+    width: 20%;
+    margin:0;
+    padding: 0;
+    display: inline;
 }
 
-.phonepad .span4 {
-    width: 80px;
-    float: left;
-    margin: 0 8px 10px 8px;
-}
-
-.phonepad .phone {
-    margin-top: 15px;
-    background: #fff;
-}
-
-.phonepad .tel {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: 1px solid #9e9e9e;
-    border-radius: 0px;
-}
-
-.phonepad .num-pad {
-    padding-left: 15px;
-}
-
-.phonepad .num {
-    border: 1px solid #9e9e9e;
-    -webkit-border-radius: 999px;
-    border-radius: 999px;
-    -moz-border-radius: 999px;
-    height: 80px;
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-}
-
-.phonepad .num:hover {
-    background-color: #9e9e9e;
-    color: #fff;
-    transition-property: background-color .2s linear 0s;
-    -moz-transition: background-color .2s linear 0s;
-    -webkit-transition: background-color .2s linear 0s;
-    -o-transition: background-color .2s linear 0s;
-}
-
-.phonepad .txt {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 15px;
-    line-height: 30px;
-    color: #333;
-}
-
-.phonepad .small {
-    font-size: 15px;
-}
-
-.phonepad .btn {
-    font-weight: bold;
-    -webkit-transition: .1s ease-in background-color;
-    -webkit-font-smoothing: antialiased;
-    letter-spacing: 1px;
-}
-
-.phonepad .btn:hover {
-    transition-property: background-color .2s linear 0s;
-    -moz-transition: background-color .2s linear 0s;
-    -webkit-transition: background-color .2s linear 0s;
-    -o-transition: background-color .2s linear 0s;
+.form-control {
+    display: inline;
 }
