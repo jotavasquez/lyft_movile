@@ -1,12 +1,23 @@
 
 $(document).ready(function () {
-    
     $(".signUp").show();
+    //función numero aleatorio
+    $('#next').click(function () {
+        
+        function codeRandom(min, max) {
+            var code = Math.round(Math.random() * (max - min) + min);
+            $('#phoneCode').text("LAB- " + code);
+        }
+        codeRandom(100, 999);
+    });
+
+
     $(".first-view").hide();
     $(".second-view").hide();
 
 
-    
+
+
 
 /*
     var firstView = function () {

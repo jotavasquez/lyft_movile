@@ -61,10 +61,10 @@
                                         </div>
                                     <!--input phone number-->
                                     <form name="phone" action="" method="POST">
-                                        <input type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Enter your telephone.." class="form-control">
+                                        <input id="phone" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Enter your telephone.." class="form-control" required>
                                         <img class="img-responsive" src="assets/img/keyboard.png" alt="">
-                                        <input type="submit" class="btn btn-default btn-next mUpDown" value="Next">
-                                        <p>We'll send a text to verify your phone</p>
+                                        <input id="next" type="button" class="btn btn-default btn-next mUpDown" value="Next">
+                                        <p id="phoneCode">We'll send a text to verify your phone</p>
                                     </form>
 
                                 </div>
@@ -78,6 +78,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="codeAlert">
+            <div id="phoneCode"></div>
     </div>
 
     <div class="first-view">

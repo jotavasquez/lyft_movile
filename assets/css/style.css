@@ -88,6 +88,7 @@
     background-color: #747474;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .mUpDown {
@@ -96,11 +97,17 @@
 
 .flag-menu {
     width: 20%;
-    margin:0;
+    margin: 0;
     padding: 0;
     display: inline;
 }
 
 .form-control {
     display: inline;
+}
+
+#phoneCode {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
 }
