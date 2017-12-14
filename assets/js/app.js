@@ -1,37 +1,43 @@
 
 $(document).ready(function () {
-    $(".signUp").show();
-    //función numero aleatorio
-    $('#next').click(function () {
-        
-        function codeRandom(min, max) {
-            var code = Math.round(Math.random() * (max - min) + min);
-            $('#phoneCode').text("LAB- " + code);
-        }
-        codeRandom(100, 999);
+    //$(".phoneForm").show();
+    //$(".first-view").hide();
+    //$(".signUp").hide();
+
+    //splash intro
+    $(".splash").fadeIn(800).fadeOut(800);
+    $(".signUpForm").fadeIn(800);
+
+    //remove 
+    $('#btnSignUp').click(function () {
+       $(".signUpForm").hide();
+        //$(".phoneForm").show();
+    });
+
+    //back button
+    $('#btnBack').click(function () {
+        var prev = $(this).parent().prev();
+        $(prev).show();
+        //$(".phoneForm").show();
     });
 
 
-    $(".first-view").hide();
-    $(".second-view").hide();
+    //display code validation
+    $('#next').click(function () {
+        $("#codeAlert").show();
+        $(".phoneForm").hide();
 
 
+        //function ramdon number
+        function codeRandom(min, max) {
+            var code = Math.round(Math.random() * (max - min) + min);
+            $('#phoneCode').text("LAB - " + code);
+        }
+        
+        codeRandom(100, 999);
 
+    });
 
-
-/*
-    var firstView = function () {
-        $(".first-view").fadeOut();
-    }
-    var firstViewAgain = function () {
-        $(".first-view").fadeIn();
-    }
-    var secondView = function () {
-        $(".second-view").fadeIn();
-    }
-    setTimeout(firstView, 800);
-    setTimeout(secondView, 800);
-*/
 });
 
 

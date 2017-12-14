@@ -11,16 +11,28 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!--splash Display-->
+    <div class="splash">
+        <img class="img-responsive" src="assets/img/logowhite.png" alt="">
+    </div>
     <!--signUp form-->
-    <div class="signUp">
+    <div class="signUpForm">
+        <img class="img-responsive" src="assets/img/logowhite.png" alt="">
+        <div class="buttonsIntro">
+            <button class="btn btn-intro" type="button">Login</button>
+            <button type="submit" id="btnSignUp" class="btn btn-intro">Sign up</button>
+        </div>
+        <!--<img class="img-responsive" src="assets/img/lyft_hello.jpg" alt=""> -->
+    </div>
+    <!--phone number form-->
+    <div class="phoneForm">
+        <!-- back button -->
+        <button id="btnBack" type="button" class="btn btn-back">
+            <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
+        </button>
         <div class="container">
             <div class="row">
-                <!-- back button -->
-                <div class="col-xs-12 col-sm-12">
-                    <button type="button" class="btn btn-back">
-                        <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
-                    </button>
-                </div>
                 <!-- form your phone-->
                 <div class="text-center">
                     <h1>Sign Up</h1>
@@ -30,69 +42,61 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12">
                                 <hr>
-                                    <!--dropdown menu-->
-                                    <div class="input-group-btn flag-menu">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="assets/img/Mexico-icon.png" alt="">
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu dropW">
-                                            <li>
-                                                <a href="#">
-                                                    <img src="assets/img/Mexico-icon.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img src="assets/img/Colombia-icon.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img src="assets/img/Peru-icon.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img src="assets/img/Chile-icon.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        </div>
-                                    <!--input phone number-->
-                                    <form name="phone" action="" method="POST">
-                                        <input id="phone" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Enter your telephone.." class="form-control" required>
-                                        <img class="img-responsive" src="assets/img/keyboard.png" alt="">
-                                        <input id="next" type="button" class="btn btn-default btn-next mUpDown" value="Next">
-                                        <p id="phoneCode">We'll send a text to verify your phone</p>
-                                    </form>
-
+                                <!--dropdown menu-->
+                                <div class="input-group-btn flag-menu">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/img/Mexico-icon.png" alt="">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropW">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/img/Mexico-icon.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/img/Colombia-icon.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/img/Peru-icon.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/img/Chile-icon.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <hr>
+                                <!--input phone number-->
+                                <form name="phone" action="" method="POST">
+                                    <input id="phone" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Enter your telephone.." class="form-control"
+                                        required>
+                                    <img class="img-responsive" src="assets/img/keyboard.png" alt="">
+                                    <input id="next" type="button" class="btn btn-default btn-next mUpDown" value="Next">
+                                    <p>We'll send a text to verify your phone</p>
+                                </form>
                             </div>
                         </div>
                     </div>
-              </div>
-            </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="codeAlert">
-            <div id="phoneCode"></div>
-    </div>
-
-    <div class="first-view">
-        <img class="img-responsive" src="assets/img/logowhite.png" alt="">
-    </div>
-    <div class="second-view">
-            <img class="img-responsive" src="assets/img/logowhite.png" alt="">
-            <div class="buttonsIntro">
-                <button class="btn btn-intro" type="">Login</button>
-                <button class="btn btn-intro" type="">Sign up</button>
+    <!--code validation-->
+    <div id="codeAlert">
+        <div class="container">
+            <div class="row">
+                <div class="xs-col-12">
+                    <div id="phoneCode">
+                    </div>
+                    <button type="button" class="btn btn-infot">OK</button>
+                </div>
             </div>
-        <!--<img class="img-responsive" src="assets/img/lyft_hello.jpg" alt=""> -->
+        </div>
     </div>
 
 

@@ -1,4 +1,4 @@
-.first-view {
+.splash {
     background-color: #ff00bc;
     display: flex;
     align-items: center;
@@ -7,11 +7,11 @@
     height: 100vh;
 }
 
-.first-view img {
+.splash img {
     width: 80%;
 }
 
-.second-view {
+.signUpForm {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,16 +19,17 @@
     justify-content: space-around;
     background-image: url(../img/lyft_hello.png);
     background-size: cover;
+    background-color: rgb(255, 255, 255);
+}
+
+.signUpForm img {
+    width: 60%;
+    margin-top: 5;
 }
 
 .logov2 {
     border: 1px solid red;
     background-color: #fff;
-}
-
-.second-view img {
-    width: 60%;
-    margin-top: 5;
 }
 
 .buttonsIntro {
@@ -38,11 +39,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-}
-
-.signUp {
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
 }
 
 .dropW {
@@ -75,6 +71,7 @@
 
 .btn-back {
     margin-top: 5%;
+    margin-left: 5%;
     padding: 2vh 2.7vh;
     border: 2px solid rgb(116, 116, 116);
     border-radius: 5em;
@@ -88,7 +85,6 @@
     background-color: #747474;
     border: none;
     color: white;
-    cursor: pointer;
 }
 
 .mUpDown {
