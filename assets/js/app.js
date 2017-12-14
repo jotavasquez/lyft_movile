@@ -15,28 +15,99 @@ $(document).ready(function () {
     });
 
     //back button
-    $('#btnBack').click(function () {
+    $('.btn-back').click(function () {
         var prev = $(this).parent().prev();
         $(prev).show();
         //$(".phoneForm").show();
     });
 
+    //funtion number length
+    $('#phone').keyup(function () {
+        var phoneNumber = $('#phone').val();
+        if (phoneNumber.length === 10) {
+            $('#next').removeClass("btn btn-default btn-disabled mUpDown");
+            $('#next').addClass("btn btn-default btn-next mUpDown");
+        }
+        if (phoneNumber.length > 10) {
+            $('#next').addClass("btn btn-default btn-disabled disabled mUpDown");
+        }
+    });
+
+    // function code validator
+    $('.code-number').keyup(function () {
+        var phoneNumber = $('#code-number').val();
+        var digits = "";
+        if (phoneNumber.length === 1) {
+            $('#code-number').next("").keyup();
+            $('#next2').addClass("btn btn-default btn-next mUpDown next2");
+        }
+        if (phoneNumber.length > 0) {
+            $('#next2').addClass("btn btn-default btn-disabled mUpDown");
+        }
+
+
+    });
 
     //display code validation
-    $('#next').click(function () {
+    $('#next,#reSend').click(function () {
         $("#codeAlert").show();
         $(".phoneForm").hide();
-
-
         //function ramdon number
         function codeRandom(min, max) {
             var code = Math.round(Math.random() * (max - min) + min);
-            $('#phoneCode').text("LAB - " + code);
+            $('#phoneCode').html("LAB - " + code);
         }
-        
         codeRandom(100, 999);
+    });
+
+    //function verify phone
+    $('#okCode').click(function () {
+        $(".verifyPhone").show();
+        $("#codeAlert").hide();
+    });
+
+    //function next2
+    $(".next2").click(function () {
+        $(".profileForm").show();
+        $(".verifyPhone").hide();
+    });
+   
+
+    $('#okUser').click(function () {
+        var button = $(this);
+
+        if (button.attr("data-dismiss") != "modal") {
+            var inputs = $('form input');
+            var success = $('.success');
+            var progress = $('.progress');
+            var progressBar = $('.progress-bar');
+
+            inputs.attr("disabled", "disabled");
+
+            button.hide();
+
+            progress.show();
+
+            progressBar.animate({ width: "100%" }, 100);
+
+            progress.delay(1000)
+                .fadeOut(600);
+                
+            button.text("Close")
+                .removeClass("btn-primary")
+                .addClass("btn-success")
+                .blur()
+                .delay(1600)
+                .fadeIn(function () {
+                    success.text("¡Log in is successful!");
+                    button.attr("data-dismiss", "modal");
+                });
+
+        }
 
     });
+
+
 
 });
 

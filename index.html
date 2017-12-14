@@ -26,15 +26,15 @@
         <!--<img class="img-responsive" src="assets/img/lyft_hello.jpg" alt=""> -->
     </div>
     <!--phone number form-->
-    <div class="phoneForm">
+    <div class="phoneForm container ">
         <!-- back button -->
         <button id="btnBack" type="button" class="btn btn-back">
             <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
         </button>
-        <div class="container">
+        <div class="">
             <div class="row">
                 <!-- form your phone-->
-                <div class="text-center">
+                <div class="col-xs-12 col-sm-12 text-center dHeigth">
                     <h1>Sign Up</h1>
                     <p>Join now for the ride credit</p>
                     <!--input + country dropdown-->
@@ -43,7 +43,7 @@
                             <div class="col-xs-12 col-sm-12">
                                 <hr>
                                 <!--dropdown menu-->
-                                <div class="input-group-btn flag-menu">
+                                <div class="input-group btn flag-menu">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="assets/img/Mexico-icon.png" alt="">
                                         <span class="caret"></span>
@@ -76,7 +76,7 @@
                                     <input id="phone" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Enter your telephone.." class="form-control"
                                         required>
                                     <img class="img-responsive" src="assets/img/keyboard.png" alt="">
-                                    <input id="next" type="button" class="btn btn-default btn-next mUpDown" value="Next">
+                                    <input id="next" type="button" class="btn btn-default btn-disabled mUpDown disabled" value="Next">
                                     <p>We'll send a text to verify your phone</p>
                                 </form>
                             </div>
@@ -86,22 +86,119 @@
             </div>
         </div>
     </div>
-    <!--code validation-->
+    <!--code Alert-->
     <div id="codeAlert">
-        <div class="container">
+        <!-- back button -->
+        <button type="button" class="btn btn-back2 btn-back">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </button>
+        <div class="container text-center code-alert">
             <div class="row">
-                <div class="xs-col-12">
-                    <div id="phoneCode">
+                <div class="xs-col-12 col-sm-12 dHeigth">
+                    <p class="phone-Code">Tu código es:</p>
+                    <div id="phoneCode" class="phone-Code">
                     </div>
-                    <button type="button" class="btn btn-infot">OK</button>
+                        <button id="okCode" type="button" class="btn btn-info">OK</button>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
+    <!--verify phone number-->
+    <div class="verifyPhone">
+    <!-- back button -->
+        <button type="button" class="btn btn-back2 btn-back">
+            <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <!-- form your phone-->
+                <div class="col-xs-12 col-sm-12 text-center dHeigth">
+                    <!-- back button 
+                    <button type="button" class="btn btn-back2 btn-back">
+                        <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
+                    </button>
+                    -->
+                    <h3>Verify Phone Number</h3>
+                    <p>Join Now for free ride credit</p>
+                    <!--input + country dropdown-->
+                    <div class="container mUpDown verify">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <hr>
+                                <!--input code numbers-->
+                                <form class="text-center">
+                                    <div class="input-group">
+                                        <form>
+                                            <label>Lab - </label>
+                                            <input id="code1" type="text" pattern="[0-9]{1}" class="code-number" required>
+                                            <input id="code2"type="text" pattern="[0-9]{1}" class="code-number" required>
+                                            <input id="code3"type="text" pattern="[0-9]{1}" class="code-number" required>
+                                            <input id="reSend" type="button" class="btn btn-default btn-next mUpDown" value="Resent Code">
+                                        </form>
+                                    </div>
+                                </form>
+                                <p>Enter the code to +52</p>
+                                <input id="next2" type="button" class="btn btn-default btn-disable mUpDown btn-next next2" value="Next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--form profile-->
+    <div class="profileForm">
+        <!-- back button -->
+        <button type="button" class="btn btn-back2 btn-back">
+            <span class="glyphicon glyphicon-chevron-left " aria-hidden="true"></span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center dHeigth">
+                    <h1>Sign Up</h1>
+                    <p>Join now for the ride credit</p>
+                    <!--input name-->
+                    <form role="form">
+                        <div class="input-group">
+                            <label for="uName" class="input-group-addon glyphicon glyphicon glyphicon-user"></label>
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <input type="text" class="form-control" id="uName1" placeholder="First Name">
+                            </div>
+                            <div class="input-group-btn">
+                                <input type="text" class="form-control" id="uName2" placeholder="Second Name">
+                            </div>
+                        </div>
+                        </div>
+                        <!--input mail-->   
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="uMail" class="input-group-addon glyphicon glyphicon glyphicon-envelope"></label>
+                                <input type="mail" class="form-control" id="uMail" placeholder="yourmail@example.com">
+                            </div>
+                        </div>
+                        <!-- checkbox -->
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> I agree to Lyft's <a href="#">Terms of Services.</a>
+                            </label>
+                        </div>
+                    </form>
+                    <!-- progress bar -->
+                        <button id="okUser"class="form-control btn btn-primary">Ok</button>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100"
+                                style="width: 0%;">
+                                <span class="sr-only">progress</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="success"></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->

@@ -27,6 +27,22 @@
     margin-top: 5;
 }
 
+#codeAlert,
+.phoneForm .verifyPhone .profileForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.code-alert {
+    display: block;
+}
+
+.dHeigth {
+    height: 100vh;
+}
+
 .logov2 {
     border: 1px solid red;
     background-color: #fff;
@@ -44,16 +60,6 @@
 .dropW {
     min-width: 100%;
 }
-
-
-/*
-.second-view img {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
 
 .margin {
     padding: 0 30px;
@@ -78,13 +84,26 @@
     background-color: #05020a00;
     font-weight: bolder;
     position: fixed;
+    z-index: 1;
 }
 
 .btn-next {
     width: 100%;
-    background-color: #747474;
+    background-color: #ff00bc;
     border: none;
     color: white;
+}
+
+.btn-ok {
+    background-color: #ff00bc;
+}
+
+.btn-disabled {
+    background-color: #747474;
+    width: 100%;
+    border: none;
+    color: white;
+    pointer-events: none;
 }
 
 .mUpDown {
@@ -98,12 +117,49 @@
     display: inline;
 }
 
-.form-control {
-    display: inline;
+.phone-Code {
+    font-size: 2em;
+    text-align: center;
+    color: #5d5d5d;
+    padding: 5%;
 }
 
-#phoneCode {
-    font-size: 1em;
-    font-weight: 700;
-    text-align: center;
+.code-number {
+    display: inline-block;
+    width: 5vh;
+    border: none;
+    border-bottom: 1px solid #ff00bc;
+    margin: 0 2%;
 }
+
+h3 {
+    font-size: 2em;
+}
+
+.verify {
+    display: inline-block;
+}
+
+.progress {
+    display: none;
+}
+
+.success {
+    margin: 10%;
+    font-weight: bold;
+    color: #ff00bc;
+    font-size: 3em;
+}
+
+
+/*.btn-back2 {
+    border: none;
+    color: #ff00bc;
+    padding: 0;
+    margin: 0;
+    top: 5%;
+    z-index: 1;
+    display: inline-block;
+}
+
+*/
